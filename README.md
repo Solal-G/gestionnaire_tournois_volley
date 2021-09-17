@@ -26,7 +26,7 @@ Project made during IT Licence last semester. Website design to create Volley To
 </p>
 <br />
 <br />
-<b3>Sommaire</b3>
+<h3>Sommaire</h3>
 <br />
 <ul>
     <li><a href="#install">Installation</a></li>
@@ -44,5 +44,82 @@ Project made during IT Licence last semester. Website design to create Volley To
     <li>5/ Lancer l'application à l'aide de : "ng serve --open"</li>
 </ul> 
 <h5><a id="htu"></a>How to use</h5>
+Avant-propos : Un compte exemple a été créée (vous retrouverez les identifiants dans la partie se connecter) disposant d'un tournois déjà prêt à être utilisé avec 9 équipes.
+Certaines fonctionnalitées ne marchent pas elles sont listées (les connues du moins) à la fin de ce document.
+
+    S'inscrire sur le site :
+- Cliquer sur le bouton "Connexion" du menu horizontal, ou depuis la page d'accueil, sur le lien "S'inscrire/Se connecter".
+
+- Remplir le formulair de droite (mot de passe plus de 5 caractères).
+
+- Cliquer sur s'inscrire pour finaliser, vous serez aussi connecter automatiquement sur le nouveau compte.
+
+
+
+    Se connecter :
+- Cliquer sur le bouton "Connexion" du menu horizontal, ou depuis la page d'accueil, sur le lien "S'inscrire/Se connecter".
+
+- Remplir le formulaire de gauche :
+    Si vous n'avez pas créer de compte :
+    Email : exemple@exemple.com
+    Mdp : 123456789
+
+
+
+    Création d'un évenement :
+- Etre connecté sur le site est requis pour cette action.
+
+- Cliquer sur le bouton "Evenements" du menu horizontal, puis sur "créer votre évenement", ou depuis la page d'accueil, dans le corps de la page en dessous du +, sur "Créer un évenement".
+
+- Entrer les différentes informations sur votre évenement, puis ajouter au moins un tournois à l'évenement.
+
+
+
+    Ajouter une équipe à un évenement/tournois avant que celui-ci est débuté :
+- Etre connecté sur le site est requis pour cette action.
+
+- Cliquer sur le bouton "Evenements" du menu horizontal, puis sur "créer votre évenement", ou depuis la page d'accueil, dans le corps de la page en dessous du +, sur "Créer un évenement".
+
+- Se rendre jusqu'à l'évenement désiré puis cliquer sur le lien "Détails et inscriptions".
+
+- Cliquer sur le bouton vert "Inscrire son équipe" du tournois désiré.
+
+- Entrer le nom de l'équipe. Il est possible d'ajouter des joueurs, et en cochant la case de s'ajouter soi-même.
+
+- Cliquer sur continuer.
+
+
+
+    Commencer un évenement.
+- Etre connecté sur un compte ayant créer un évenement est requis pour cette action.
+
+- Cliquer sur "Profil" du menu horizontal.
+
+- Sur la droite s'affiche les évenements créés/disponnibles sur ce compte.
+
+- Cliquer sur le bouton "Commencer" de l'évenement désiré.
+
+- Pour la gestion d'un tournois voir la suite.
+
+
+
+    Gestion d'un tournois.
+- Après avoir lancer un évenement, choisir un tournois à débuter.
+
+- Ajouter d'abord un round : Les équipes sont automatiquements placées dans des poules de deux (si jamais nombre impaire d'équipes une poules sera composé de 3 équipes).
+Il est possible de changer une équipe de poule avec le menu déroulant à droite d'une équipe, puis en cliquant sur ok. Attentiontous les matchs de la poule seront réinitialisés.
+
+- Pour afficher les confrontations/matchs d'une poule, cliquer sur "afficher les scores". Pour chaque matchs il est possible d'ajouter un set, ou de reinitialiser le score du match.
+Attention il faut au moins deux sets gagnants pour qu'une équipe soit déclarée vainqueur de la confrontation.
+
+- Lorsque tous les matchs du round sont effectués, il est possible de passer au round suivant; les équipes qualifiées seront automatiquement ajouter au tour suivant.
+Si des équipes manquent, il est possible de les ajouter manuellement à une poule.
+
+- Finale : un round est "final" lorsque le round ne comporte qu'une poule de deux équipes. Dans ce cas là lorsque une des deux équipes remportent la confrontation un message affiche le gagnant.
+
+- A tout moment il est possible de sauvegarder le tournois, de quitter la page et d'y revenir plus tard. Au moment de cliquer sur "sauvegarder" il faut bien entendu être connecté à internet.
+<br />
 <h5><a id="authors"></a>Authors</h5>
+<br />
 <h5><a id="credits"></a>Credits</h5>
+<br />
