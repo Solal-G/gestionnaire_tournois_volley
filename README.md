@@ -26,7 +26,9 @@ Project made during IT Licence last semester. Website design to create Volley To
 </p>
 <br />
 <br />
-<h3>Sommaire</h3>
+
+## Sommaire
+
 <br />
 <ul>
     <li><a href="#install">Installation</a></li>
@@ -35,7 +37,9 @@ Project made during IT Licence last semester. Website design to create Volley To
     <li><a href="#credits">Credits</a></li>
 </ul>
 
-<h3><a id="install"></a>Installation</h3>
+<h3><a id="install"></a>
+    Installation
+</h3>
 <ul>
     <li>1/ Installer Angular à l'aide de la commande : "npm install -g @angular/cli"</li>
     <li>2/ Effectuer un clonage du git à l'aide de la commande : "git clone https://github.com/Solal-G/gestionnaire_tournois_volley"</li>
@@ -120,10 +124,12 @@ Si des équipes manquent, il est possible de les ajouter manuellement à une pou
 - A tout moment il est possible de sauvegarder le tournois, de quitter la page et d'y revenir plus tard. Au moment de cliquer sur "sauvegarder" il faut bien entendu être connecté à internet.
 <br />
 <h3><a id="authors"></a>Authors</h3>
+
 * **Louis Lamalle** _alias_ [@damdcn](https://github.com/damdcn)
 * **Solal Goldstein** _alias_ [@Solal-G](https://github.com/Solal-G)
 * **Romain Jaminet** _alias_ [@TiaviR](https://github.com/TiaviR)
 * **Thomas Caprio** _alias_ [@jerems34](https://github.com/jerems34)
+
 <br />
 <h3><a id="credits"></a>Credits</h3>
 Thanks to our professor Michel Meynard.
