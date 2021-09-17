@@ -6,15 +6,15 @@ Project made during IT Licence last semester.
     <img src="https://github.com/Solal-G/gestionnaire_tournois_volley/blob/main/gestionv1/v.png" alt="Logo" width="50%">
     <h3 align="center">GTV</h3>
     <p align="center">
-        Website design to create some Volley Tournament.
+        Website design to create Volley Tournaments.
         <br />
-        Key feature :
+    <b>Key feature :</b>
         <br />
-        - Develop with Angular
+        Develop with Angular
         <br />
-        - Data synch with PHP
+        Data synch with PHP
         <br />
-        - Offline parts dealt with LocalStorage 
+        Offline parts dealt with LocalStorage 
         <br />
             <a href="https://github.com/Solal-G/gestionnaire_tournois_volley/tree/main/gestionv1">
                 <strong>Source code »</strong>
