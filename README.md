@@ -26,7 +26,7 @@ Project made during IT Licence last semester. Website design to create Volley To
 </p>
 <br />
 <br />
-## Sommaire
+<b3>Sommaire</b3>
 <br />
 <ul>
     <li><a href="#install">Installation</a></li>
