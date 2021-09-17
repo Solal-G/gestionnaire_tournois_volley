@@ -1,6 +1,11 @@
 # Gestionnaire Tournois Volley
 [![badge_android](https://img.shields.io/badge/made%20with-angular-red)](https://angular.io/)[![badge_android](https://img.shields.io/badge/Ter%20Licence%203-Universit%C3%A9%20de%20Montpellier-ff69b4)](https://sciences.edu.umontpellier.fr/)
+
+<br />
+
 Project made during IT Licence last semester. Website design to create Volley Tournaments.
+
+<br />
 
 <p align="center">
     <img src="https://github.com/Solal-G/gestionnaire_tournois_volley/blob/main/gestionv1/v.png" alt="Logo" width="50%">
