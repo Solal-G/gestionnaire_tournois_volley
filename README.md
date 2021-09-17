@@ -1,12 +1,11 @@
 # Gestionnaire Tournois Volley
 [![badge_android](https://img.shields.io/badge/made%20with-angular-red)](https://angular.io/)[![badge_android](https://img.shields.io/badge/Ter%20Licence%203-Universit%C3%A9%20de%20Montpellier-ff69b4)](https://sciences.edu.umontpellier.fr/)
-Project made during IT Licence last semester.
+Project made during IT Licence last semester. Website design to create Volley Tournaments.
 
 <p align="center">
     <img src="https://github.com/Solal-G/gestionnaire_tournois_volley/blob/main/gestionv1/v.png" alt="Logo" width="50%">
     <h3 align="center">GTV</h3>
     <p align="center">
-        Website design to create Volley Tournaments.
         <br />
     <b>Key feature :</b>
         <br />
@@ -27,7 +26,8 @@ Project made during IT Licence last semester.
 </p>
 <br />
 <br />
-##Sommaire
+## Sommaire
+<br />
 <a href="#install">Installation</a>
  <ul>
     <li>1/ Installer Angular à l'aide de la commande : "npm install -g @angular/cli"</li>
