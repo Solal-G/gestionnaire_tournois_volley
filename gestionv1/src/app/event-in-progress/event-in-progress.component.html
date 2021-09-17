@@ -1,0 +1,69 @@
+<section id="home" class="page overlay">
+  <a style="float: left" routerLink='../../profile'>
+    <i class="material-icons">arrow_back</i>
+  </a>
+  <div id="con" class="container">
+    <div id="d2" class="content cover text-center">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="titre" class="mt-0 mb-4 h1" data-animation="fadeInDown" data-delay="300">Vous êtes sur le point de
+            débuter un évènement
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="col-sm-12" *ngIf="valide()">
+    <h1 *ngIf="this.localStorageService.local">L'évènement est lancé !</h1>
+    <div class="card bg-primary text-center">
+      <div class="card-header">
+        <h1 style="text-align: center;">{{event.name}}</h1>
+      </div>
+      <div class="card-body">
+        <li class="list-group-item">
+
+          <p style="display: inline; margin-right: 5rem ">Date de l'événement: {{event.dateEv}}</p>
+          <p style="display: inline; margin-left: 5rem"> Date limite d'inscription: {{event.dateLimite}}</p>
+          <p style="margin-top: 2rem" >{{description}}</p>
+        </li>
+      </div>
+    </div>
+
+
+    <div class="col-sm-12" style="display: inline; margin-top:5rem">
+      <div class="col-sm-6" style="display: inline">
+        <div style="text-align: center" *ngIf="!this.localStorageService.local">
+          <label>Cliquez pour activer la gestion des tournois en local.</label><br>
+          <button class="btn btn-primary" (click)="startLocalStorage()">Lancer</button>
+        </div>
+        <div style="text-align: center" *ngIf="this.localStorageService.local">
+          <label>N'oubliez pas de sauvegarder votre évènement avant de partir !</label>
+          <button style="margin-top: 1rem" class="btn btn-primary" (click)="save()">Sauvegarder le tournoi</button><br>
+          <label><small>La sauvegarde nécessite une connexion internet.</small></label>
+          <br>
+          <br>
+          <button class="btn btn-danger" (click)="clearLocalStorage()">Arreter</button><br>
+          <label>Cliquez pour nettoyer le localstorage</label>
+          <label><span>ATTENTION ! Enregistrer vos tournois avant d'appuyer sinon toutes les données seront perdues.</span></label>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <p *ngIf="!this.localStorageService.local">Vous devez lancer les tournois à l'aide du <span>Lancer</span> pour gérer les tournois</p>
+        <div style= "margin-bottom: 2%;"class="col-sm-8 col-sm-offset-2" *ngFor="let t of tournaments">
+          <button class="btn btn-success" [disabled]="!this.localStorageService.local" [routerLink]="[t.nameT]">{{t.nameT }}</button><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-8 col-sm-offset-1" *ngIf="!valide()">
+  <h1>Aucun événement n'a été lancé</h1>
+  <p>Pour lancer correctement l'évènement aller dans votre profils et lancez votre évènement en cliquant 
+    sur <span>Commencer</span>
+  </p>
+
+</div>

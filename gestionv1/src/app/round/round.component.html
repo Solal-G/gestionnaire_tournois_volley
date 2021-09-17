@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="addP()">Ajouter une poule</button>
+
+<!---------------------------------tableau des poules------------------------------------------>
+<div style="margin-top:1%; border-bottom: dashed 1px" *ngFor="let item of pouleArray;index as i">
+    <app-poule (refreshPool)=(refreshRound())  [numRound]=this.numRound [numPoule]=i></app-poule>
+</div>

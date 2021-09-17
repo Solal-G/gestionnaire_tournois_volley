@@ -1,0 +1,64 @@
+
+<!--------------------------------Tableau correspondant à la poule------------------------------------------------------>
+<table style="z-index:1" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Equipe</th>
+      <th scope="col">Points</th>
+      <th scope="col">Envoyer vers :</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of teamArray; index as i">
+      <td>
+        <button (click)="deleteT(item)" style="float: left" type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        {{ getTeamName(item) }}</td>
+      <td>{{ localStorageService.calcTeamPoolMatchWin(this.name, this.numRound, item)*3}}</td>
+      <td>
+        <form class="form-inline" [formGroup]="form2" (ngSubmit)="changeTeam(item)">
+          <div class="form-group">
+            <select style="display: inline" formControlName="numPool">
+              <option [ngValue]="null" disabled>Choisir Poule</option>
+              <option [ngValue]="i"
+                *ngFor="let item of this.localStorageService.getPoolsFromRound(this.name, this.numRound); index as i">
+                Poule {{ i+1 }}
+              </option>
+            </select>
+            <button style="display: inline" class="btn btn-link">
+              OK
+            </button>
+          </div>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">
+        <button class="btn btn-link" (click)="addT()">Ajouter une équipe</button>
+      </th>
+      <td>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="displayForm">
+          <div class="form-group">
+            <input type="text" placeholder="nom Equipe" formControlName="nameF" />
+            <input type="number" class="form-control" formControlName="niveau" placeholder="niveau">
+            <button class="btn btn-success" type="submit">Confirmer</button>
+          </div>
+        </form>
+      </td>
+      <td>
+        <button (click)="(deleteP())" class="btn btn-link">Supprimer Poule</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-----------------------------------Display scores------------------------------------------------------------------>
+<button style="margin-bottom: 1%" class="btn btn-primary" (click)="this.displayForm2 = true">Afficher les
+  scores</button>
+
+<app-results *ngIf="displayForm2" [numRound]=this.numRound [numPoule]=this.numPoule></app-results>
+<button style="margin-bottom: 1%" class="btn" *ngIf="this.displayForm2" (click)="this.displayForm2 = false">cacher les
+  scores</button>

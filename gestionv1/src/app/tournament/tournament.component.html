@@ -1,0 +1,36 @@
+<div id="d" class="col-md-4">
+    <div class="card">
+        <div class="card-header">
+            <h3 style="text-align: center;">{{nameT}}</h3>
+        </div>
+        <div class="card-body border-primary">
+            <li class="">
+                <p>Format de jeu: {{format}} x {{ format }}</p>
+                <p>Equipes inscrites: {{ NbTeamRegistered }}</p>
+                <label *ngIf="listerEquipe === false">Afficher les équipe inscrites
+                    <button class="btn btn-primary" *ngIf="listerEquipe === false"
+                        (click)="displayTeams()">Afficher</button></label>
+                <label *ngIf="listerEquipe === true"> Cacher les équipes inscrites
+                    <button class="btn btn-primary" *ngIf="listerEquipe === true"
+                        (click)="displayTeams()">Cacher</button></label><br>
+                <button class="btn btn-success" *ngIf="inscritpion === false" (click)="onClickInscrire(nameT)">Inscrire son
+                    équipe</button>
+                <button class="btn btn-success" *ngIf="inscritpion === true"
+                    (click)="onClickInscrire(nameT)">Annuler</button>
+            </li>
+        </div>
+    </div>
+</div>
+
+    <div style="margin-top: 2rem" class="col-md-5" *ngIf="inscritpion">
+        <app-new-team></app-new-team>
+    </div>
+    <div style="margin-top: 2rem" class="row">
+        <div class="col-md-3" *ngIf="listerEquipe === true">
+            <ul class="list-group">
+                <app-team *ngFor="let team of teams" [tournamentid]="team.tournamentid" [teamName]="team.teamName"
+                    [players]="team.players">
+                </app-team>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,31 @@
+<section id="home" class="page overlay">
+  <a style="float: left" routerLink='..'>
+    <i class="material-icons">arrow_back</i>
+  </a>
+  <div id="con" class="container">
+    <div id="d2" class="content cover text-center">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 id="titre" class="mt-0 mb-4 h1" data-animation="fadeInDown" data-delay="300">{{ this.name }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button style="margin-top: 3rem" class="btn btn-primary" (click)="addR()">Ajouter un round</button>
+<br>
+<button style="margin-top: 3rem" class="btn btn-danger" (click)="reiTournament()">Reinitialiser le tournois</button>
+<br>
+
+<div class="container-fluid" style="height:100%; background-color: white; margin-top:1%">
+    <div style="align-content: center; align-items: center; height: 100%">
+    <div [ngStyle]="monStyle()" class="col-lg-5" *ngFor="let item of rounds;index as i">
+        <div class="d1">
+               <h3>Round n°{{i+1}}</h3>
+               <app-round [pouleArray]="rounds[i]" [numRound]="i"></app-round>
+        </div>
+    </div>
+    </div>
+</div>

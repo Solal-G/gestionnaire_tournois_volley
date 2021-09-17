@@ -1,0 +1,24 @@
+<!--------------------------------Tableau des résultats---------------------------------------------------->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Equipe1</th>
+            <th scope="col">score</th>
+            <th scope="col">Equipe2</th>
+        </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let match of localStorageService.getMatchsFromPool(this.tournamentName, this.numRound, this.numPoule); index as i">
+    <th>{{ this.localStorageService.getTeamName(this.tournamentName, match[0]) }} </th>
+    <th>   
+        <button style="display: block" class="btn btn-link" (click)="this.modifScore(this.localStorageService.getTeamName(this.tournamentName, match[0]),this.localStorageService.getTeamName(this.tournamentName, match[1]))">Ajouter un set</button>
+        <button style="display: block" class="btn btn-link" (click)="this.reinitializeScore(this.localStorageService.getTeamName(this.tournamentName, match[0]),this.localStorageService.getTeamName(this.tournamentName, match[1]))">Réinitialiser les scores</button>
+        {{ this.getScore(this.tournamentName, this.numRound, this.numPoule, i)}}
+    </th>
+    <th>{{ this.localStorageService.getTeamName(this.tournamentName, match[1]) }}</th>
+</tr>
+</tbody>
+</table>
+<app-set-results (messageToParent)=(hideModifScore()) *ngIf="displayModifScore" [numRound]=this.numRound [numPoule]=this.numPoule [team1]=this.team1 [team2]=this.team2></app-set-results>
+
+

@@ -1,0 +1,50 @@
+<!----------------------Bannière------------------------------>
+<section id="home" class="page overlay">
+        <div id="con" class="container">
+            <div id="d2" class="content cover text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="mt-0 mb-4 h1" data-animation="fadeInDown" data-delay="300">Bienvenu sur GTV!</h1>
+                        <a *ngIf="!this.connectionService.isConnected"[routerLink]="['/connection']" routerLinkActive="router-link-active"  class="mt-0 mb-4 btn btn-primary" data-animation="fadeIn" data-delay="900" href="#services">Se connecter</a>
+                        <h3 class="mt-0 mb-0 animated fadeIn showing" data-animation="fadeIn" data-delay="600">Inscrivez vous et créez votre tournoi</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!--------------------------------Les services proposés--------------------------------------------------------------->
+<section id="services" class="page">
+        <div class="container">
+            <div class="content text-center">
+                <div class="heading">
+                    <h2 style="font: italic small-caps bold 16px/2 cursive; font-size: 3rem" class="mt-0 mb-4">Ce que GTV vous offre</h2>
+                    <div class="border"></div>
+                    <p style="font: 1.2em 'Fira Sans', 'serif';" class="mt-4 mb-0">Notre système de gestion de tournois vous propose plusieurs fonctionnalités. Cliquez sur les items ci-dessous pour y accéder</p>
+                </div>
+                <div class="row">
+                    <div style="margin-top: 2%" class="col-sm-6 service animated fadeInUp showing" data-animation="fadeInUp" data-delay="300">
+                    <i class="material-icons">group_add</i>
+                        <h3 style="margin-top: 2%; text-shadow: 0px 0px 0px;" class="mt-5 mb-4"><a [routerLink]="['/connection']" routerLinkActive="router-link-active" >S'inscrire/Se connecter</a></h3>
+                        <p>Connectez vous à votre compte ou créez en un si vous n'en avez pas</p>
+                    </div>
+                    <div style="margin-top: 2%" class="col-sm-6 service animated fadeInUp showing" data-animation="fadeInUp" data-delay="600">
+                        <i class="material-icons">add_circle</i>
+                        <h3 style="margin-top: 2%; text-shadow: 0px 0px 0px;" class="mt-5 mb-4"><a [routerLink]="['/events/new-event']" routerLinkActive="router-link-active" >Créer un évènement</a></h3>
+                        <p>Créez un nouvel évènement, choisissez une date et un lieu. Ajoutez y différents tournois avec le format de votre choix.</p>
+                    </div>
+                    <div style="margin-top: 5%" class="col-sm-6 service animated fadeInUp showing" data-animation="fadeInUp" data-delay="900">
+                        <i class="material-icons">menu_book</i>
+                        <h3 style="margin-top: 2%; text-shadow: 0px 0px 0px;" class="mt-5 mb-4"><a [routerLink]="['/events']" routerLinkActive="router-link-active" >Consulter les évènements</a></h3>
+                        <p>Vous pouvez accéder aux évènements et tournois passés ainsi que consulter les tableaux des matchs</p>
+                    </div>
+                    <div style="margin-top: 5%" class="col-sm-6 service animated fadeInUp showing" data-animation="fadeInUp" data-delay="900">
+                        <i class="material-icons">account_circle</i>
+                        <h3 style="margin-top: 2%; text-shadow: 0px 0px 0px;" class="mt-5 mb-4"><a [routerLink]="['/profile']" routerLinkActive="router-link-active" >Editer votre profil</a></h3>
+                        <p>Accédez à vos informations personnelles et modifiez votre équipe ou votre niveau par exemple</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+

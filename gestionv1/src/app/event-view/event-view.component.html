@@ -1,0 +1,32 @@
+<section id="home" class="page overlay">
+  <div id="con" class="container">
+      <div id="d2" class="content cover text-center">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h1 class="mt-0 mb-4 h1" data-animation="fadeInDown" data-delay="300">Les évènements</h1>
+                  <a [routerLink]="['/events/new-event']" routerLinkActive="router-link-active"  class="mt-0 mb-4 btn btn-primary" data-animation="fadeIn" data-delay="900" href="#services">Créez votre évènement!</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<div style="margin-top : 5rem" class="container">
+    <div class="row" style="text-align: center;">
+
+    </div>
+    <div class="row" *ngFor="let event of events; let i = index ">
+      
+        <ul class="list-group">
+          <app-event 
+          [indexEvent] = "i"
+          [name] = "event.name"
+          [dateEv] = "event.dateEv"
+          [dateLimite] = "event.dateLimite"
+          [tournois] = "event.tournois" 
+          [description] = "event.description">
+        </app-event>
+        </ul>
+      
+
+    </div>
+  </div>

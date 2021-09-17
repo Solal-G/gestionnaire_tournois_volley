@@ -1,0 +1,81 @@
+<section id="home" class="page overlay">
+  <div id="con" class="container">
+    <div id="d2" class="content cover text-center">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="mt-0 mb-4 h1 titre" data-animation="fadeInDown" data-delay="300" *ngIf="!this.connectionService.isConnected">Connexion/Inscription
+          </h1>
+          <h1 class="mt-0 mb-4 h1 titre" data-animation="fadeInDown" data-delay="300" *ngIf="this.connectionService.isConnected">Déconnection</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+    <!-- formulaire de connexion  -->
+    <div style="margin-top: 5rem" class="col-md-6" *ngIf="!this.connectionService.isConnected">
+        <h4 style="font: 1.2em, 'Fira Sans', 'serif';">Vous possédez déjà un compte ? Identifiez vous !</h4>
+        <form [formGroup]="formConnexion" (ngSubmit)="onSignIn()">
+            <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" formControlName="email">
+            </div>
+            <div class="form-group">
+                <label>Mot de passe</label>
+                <input type="password" class="form-control" formControlName="mdp">
+            </div>
+            <button class="btn btn-success" [disabled]="formConnexion.invalid">Se connecter</button>
+        </form>
+        <p class="text-danger" *ngIf="this.connectionService.wrongPwd">Mauvais identifiant ou mot de passe !</p>
+        <p class="text-danger" *ngIf="this.connectionService.pbCoBdd">Une erreur est survenue, veuillez réessayer.</p>
+    </div>
+    <!-- formulaire d'inscritpion  -->
+    <div style="margin-top: 5rem" class="col-md-6" *ngIf="!this.connectionService.isConnected">
+        <h4>Première visite ?  Créez-vous un compte en 2 min !</h4>
+        <form [formGroup]="formInscription" (ngSubmit)="onInscription()">
+            <div class="form-group">
+                <label>Nom <span>*</span></label>
+                <input type="text" class="form-control" formControlName="nom">
+            </div>
+            <div class="form-group">
+                <label>Prénom <span>*</span></label>
+                <input type="text" class="form-control" formControlName="prenom">
+                <label><small class="text-danger" *ngIf="prenom.errors?.minlength && prenom.touched">
+                    3 caractères minimum pour le prénom</small></label>
+            </div>
+            <div class="form-group">
+                <label>Date de naissance <span>*</span></label>
+                <input type="date" class="form-control" formControlName="birthday">
+            </div>
+            <div class="form-group">
+                <label>Votre niveau sur 5 <span>*</span></label>
+                <input type="number" class="form-control" formControlName="niveau" placeholder="1 débutant, 3 correct, 5 très bon">
+                <label><small class="text-danger" *ngIf="niveau.errors?.min || niveau.errors?.max">
+                Le niveau doit être compris entre 1 et 5 !</small></label>
+            </div>
+            <div class="form-group">
+                <label>Adresse email <span>*</span></label>
+                <input type="email" class="form-control" formControlName="email" placeholder="gestion@tournois.fr">
+                <label><small class="text-danger" *ngIf="email.touched && email.invalid">
+                    Entrez une adresse email valide !</small></label>
+            </div>
+            <div class="form-group">
+                <label>Mot de passe <span>*</span></label>
+                <input type="password" class="form-control" formControlName="mdp">
+                <label><small class="text-danger" *ngIf="mdp.errors?.minlength && mdp.touched ">
+                Le doit mot de passe doit faire minimum 5 caractères !</small></label>
+            </div>
+            <button class="btn btn-primary" [disabled]="formInscription.invalid">S'inscrire</button>
+            <br>
+            <small *ngIf="formInscription.invalid"><span>*</span> Champs obligatoires</small><br>
+        </form>
+    </div>
+    
+
+    <div style="margin-top: 5rem" class="col-md-12" *ngIf="this.connectionService.isConnected">
+        <h4>Vous partez déjà ? A bientôt !</h4>
+        <button class="btn btn-danger" (click)="this.connectionService.signOut()">Déconnecter</button>
+    </div>
+    
+</div>
