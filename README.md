@@ -26,7 +26,7 @@ Project made during IT Licence last semester. Website design to create Volley To
 </p>
 <br />
 <br />
-<h3>Sommaire</h3>
+## Sommaire
 <br />
 <ul>
     <li><a href="#install">Installation</a></li>
@@ -35,7 +35,7 @@ Project made during IT Licence last semester. Website design to create Volley To
     <li><a href="#credits">Credits</a></li>
 </ul>
 
-<h5><a id="install"></a>Installation</h5>
+<h3><a id="install"></a>Installation</h3>
 <ul>
     <li>1/ Installer Angular à l'aide de la commande : "npm install -g @angular/cli"</li>
     <li>2/ Effectuer un clonage du git à l'aide de la commande : "git clone https://github.com/Solal-G/gestionnaire_tournois_volley"</li>
@@ -43,7 +43,7 @@ Project made during IT Licence last semester. Website design to create Volley To
     <li>4/ Effectuer la commande suivante : "npm install"</li>
     <li>5/ Lancer l'application à l'aide de : "ng serve --open"</li>
 </ul> 
-<h5><a id="htu"></a>How to use</h5>
+## <h3><a id="htu"></a>How to use</h3>
 Avant-propos : Un compte exemple a été créée (vous retrouverez les identifiants dans la partie se connecter) disposant d'un tournois déjà prêt à être utilisé avec 9 équipes.
 Certaines fonctionnalitées ne marchent pas elles sont listées (les connues du moins) à la fin de ce document.
 
@@ -119,7 +119,8 @@ Si des équipes manquent, il est possible de les ajouter manuellement à une pou
 
 - A tout moment il est possible de sauvegarder le tournois, de quitter la page et d'y revenir plus tard. Au moment de cliquer sur "sauvegarder" il faut bien entendu être connecté à internet.
 <br />
-<h5><a id="authors"></a>Authors</h5>
+<h3><a id="authors"></a>Authors</h3>
+
 <br />
-<h5><a id="credits"></a>Credits</h5>
+<h3><a id="credits"></a>Credits</h3>
 <br />
