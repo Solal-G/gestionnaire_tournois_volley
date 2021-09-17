@@ -26,7 +26,7 @@ Project made during IT Licence last semester. Website design to create Volley To
 </p>
 <br />
 <br />
-## Sommaire
+<h3>Sommaire</h3>
 <br />
 <ul>
     <li><a href="#install">Installation</a></li>
@@ -43,7 +43,7 @@ Project made during IT Licence last semester. Website design to create Volley To
     <li>4/ Effectuer la commande suivante : "npm install"</li>
     <li>5/ Lancer l'application à l'aide de : "ng serve --open"</li>
 </ul> 
-## <h3><a id="htu"></a>How to use</h3>
+<h3><a id="htu"></a>How to use</h3>
 Avant-propos : Un compte exemple a été créée (vous retrouverez les identifiants dans la partie se connecter) disposant d'un tournois déjà prêt à être utilisé avec 9 équipes.
 Certaines fonctionnalitées ne marchent pas elles sont listées (les connues du moins) à la fin de ce document.
 
@@ -120,7 +120,11 @@ Si des équipes manquent, il est possible de les ajouter manuellement à une pou
 - A tout moment il est possible de sauvegarder le tournois, de quitter la page et d'y revenir plus tard. Au moment de cliquer sur "sauvegarder" il faut bien entendu être connecté à internet.
 <br />
 <h3><a id="authors"></a>Authors</h3>
-
+* **Louis Lamalle** _alias_ [@damdcn](https://github.com/damdcn)
+* **Solal Goldstein** _alias_ [@Solal-G](https://github.com/Solal-G)
+* **Romain Jaminet** _alias_ [@TiaviR](https://github.com/TiaviR)
+* **Thomas Caprio** _alias_ [@jerems34](https://github.com/jerems34)
 <br />
 <h3><a id="credits"></a>Credits</h3>
+Thanks to our professor Michel Meynard.
 <br />
