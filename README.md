@@ -130,10 +130,10 @@ Si des équipes manquent, il est possible de les ajouter manuellement à une pou
 <br />
 <h3><a id="authors"></a>Authors</h3>
 
-* **Louis Lamalle** _alias_ [@damdcn](https://github.com/damdcn)
+* **Thomas Caprio** _alias_ [@jerems34](https://github.com/jerems34)
 * **Solal Goldstein** _alias_ [@Solal-G](https://github.com/Solal-G)
 * **Romain Jaminet** _alias_ [@TiaviR](https://github.com/TiaviR)
-* **Thomas Caprio** _alias_ [@jerems34](https://github.com/jerems34)
+* **Louis Lamalle** _alias_ [@lamalle](https://github.com/lamalle)
 
 <br />
 <h3><a id="credits"></a>Credits</h3>
