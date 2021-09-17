@@ -28,20 +28,21 @@ Project made during IT Licence last semester. Website design to create Volley To
 <br />
 ## Sommaire
 <br />
-<a href="#install">Installation</a>
- <ul>
+<ul>
+    <li><a href="#install">Installation</a></li>
+    <li><a href="#htu">How to use</a></li>
+    <li><a href="#authors">Authors</a></li>
+    <li><a href="#credits">Credits</a></li>
+</ul>
+
+<h5><a id="install"></a>Installation</h5>
+<ul>
     <li>1/ Installer Angular à l'aide de la commande : "npm install -g @angular/cli"</li>
     <li>2/ Effectuer un clonage du git à l'aide de la commande : "git clone https://github.com/Solal-G/gestionnaire_tournois_volley"</li>
     <li>3/ Se placer dans le dossier gestionv1 à l'aide de la commande : "cd gestionv1"</li>
     <li>4/ Effectuer la commande suivante : "npm install"</li>
     <li>5/ Lancer l'application à l'aide de : "ng serve --open"</li>
 </ul> 
-
-<a href="#htu">How to use</a>
-<a href="#authors">Authors</a>
-<a href="#credits">Credits</a>
-
-<h5><a id="install"></a>Installation</h5>
 <h5><a id="htu"></a>How to use</h5>
 <h5><a id="authors"></a>Authors</h5>
 <h5><a id="credits"></a>Credits</h5>
