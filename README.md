@@ -46,33 +46,25 @@ Project made during IT Licence last semester. Website design to create Volley To
     Installation
 </h3>
 <ul>
-    <li>1/ Installer Angular à l'aide de la commande : "npm install -g @angular/cli"</li>
-    <li>2/ Effectuer un clonage du git à l'aide de la commande : "git clone https://github.com/Solal-G/gestionnaire_tournois_volley"</li>
-    <li>3/ Se placer dans le dossier gestionv1 à l'aide de la commande : "cd gestionv1"</li>
-    <li>4/ Effectuer la commande suivante : "npm install"</li>
-    <li>5/ Lancer l'application à l'aide de : "ng serve --open"</li>
+    <li>1/ Install Angular with command : "npm install -g @angular/cli"</li>
+    <li>2/ Clone the git repository : "git clone https://github.com/Solal-G/gestionnaire_tournois_volley"</li>
+    <li>3/ Get to the gestionv1 repository : "cd gestionv1"</li>
+    <li>4/ Install npm : "npm install"</li>
+    <li>5/ Launch the app : "ng serve --open"</li>
 </ul> 
 <h3><a id="htu"></a>How to use</h3>
-Avant-propos : Un compte exemple a été créée (vous retrouverez les identifiants dans la partie se connecter) disposant d'un tournois déjà prêt à être utilisé avec 9 équipes.
-Certaines fonctionnalitées ne marchent pas elles sont listées (les connues du moins) à la fin de ce document.
 
-    S'inscrire sur le site :
-- Cliquer sur le bouton "Connexion" du menu horizontal, ou depuis la page d'accueil, sur le lien "S'inscrire/Se connecter".
+An exemple account has been create (the credentials are list in the "login" part) with a tournament ready to start and nine teams.
+Some features does not work, they are listed at the end of this part.
 
-- Remplir le formulair de droite (mot de passe plus de 5 caractères).
+Register :
+- Click on "Connexion" in the top-menu, or "S'inscrire/se connecter" from the home page.
+- Fill the form on the right (password is more than 5 letters).
+- Click "s'inscrire", you will now be registered and connected on the new account.
 
-- Cliquer sur s'inscrire pour finaliser, vous serez aussi connecter automatiquement sur le nouveau compte.
-
-
-
-    Se connecter :
-- Cliquer sur le bouton "Connexion" du menu horizontal, ou depuis la page d'accueil, sur le lien "S'inscrire/Se connecter".
-
-- Remplir le formulaire de gauche :
-    Si vous n'avez pas créer de compte :
-    Email : exemple@exemple.com
-    Mdp : 123456789
-
+ Log in :
+- Click on "Connexion" from the top-menu, or "S'inscrire/se connecter" from the home page.
+- Fill the left form. If you don't have an account : Email->exemple@exemple.com / Password->123456789
 
 
     Création d'un évenement :
@@ -81,6 +73,8 @@ Certaines fonctionnalitées ne marchent pas elles sont listées (les connues du 
 - Cliquer sur le bouton "Evenements" du menu horizontal, puis sur "créer votre évenement", ou depuis la page d'accueil, dans le corps de la page en dessous du +, sur "Créer un évenement".
 
 - Entrer les différentes informations sur votre évenement, puis ajouter au moins un tournois à l'évenement.
+
+    
 
 
 
